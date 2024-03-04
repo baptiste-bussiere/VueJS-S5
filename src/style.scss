@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "Mona";
+  src: url("/Mona-Sans.ttf");
+}
+
+
 :root {
   line-height: 1.5;
   font-weight: 400;
 
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Mona";
 }
 
 body {
