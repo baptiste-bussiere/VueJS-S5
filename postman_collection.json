@@ -1,0 +1,572 @@
+{
+	"info": {
+		"_postman_id": "2e21242a-9279-4afe-8edd-8ce92ff2b526",
+		"name": "WRA506",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27928245"
+	},
+	"item": [
+		{
+			"name": "Movies",
+			"item": [
+				{
+					"name": "Create Movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Titre du film\",\n    \"description\": \"Description du film\",\n    \"duration\": 60,\n    \"releaseDate\": \"01/01/1990\",\n    \"director\": \"Réalisateur\",\n    \"entries\": 10000,\n    \"note\": 5,\n    \"category\": \"/PROJETSYMFONY/api/categories/82\",\n    \"actor\": [\n        \"/PROJETSYMFONY/api/actors/430\",\n        \"/PROJETSYMFONY/api/actors/429\"\n    ],\n    \"image\": \"/PROJETSYMFONY/api/media_objects/511\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/movies",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Movies",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/merge-patch+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"category\": \"/PROJETSYMFONY/api/categories/66\",\n  \"actor\": [\n    \"/PROJETSYMFONY/api/actors/351\",\n    \"/PROJETSYMFONY/api/actors/352\"\n  ],\n  \"title\": \"Titre\",\n  \"description\": \"Desc du film\",\n  \"releaseDate\": \"2024-01-31T09:04:20.026Z\",\n  \"duration\": 10,\n  \"online\": true,\n  \"note\": 5,\n  \"entries\": 5000000,\n  \"budget\": 10,\n  \"director\": \"Réalisateur\",\n  \"website\": \"http://film.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/movies/301",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"movies",
+								"301"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Movies",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/movies/301",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"movies",
+								"301"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actors",
+			"item": [
+				{
+					"name": "Get Actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/actors",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Actor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Prénom\",\n    \"lastName\": \"Nom\",\n    \"rewards\": [\n        \"Grammies\"\n    ],\n    \"fullName\": \"Prénom Nom\",\n    \"movies\": [\n        \"/PROJETSYMFONY/api/movies/307\"\n    ],\n    \"nationality\": \"/PROJETSYMFONY/api/nationalities/133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/actors",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Actors",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/merge-patch+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 352,\n    \"firstName\": \"Mon\",\n    \"lastName\": \"Belluci\",\n    \"fullName\": \"Mon Belluci\",\n    \"rewards\": [\n        \"Golden Globe\"\n    ],\n    \"movies\": [\n        \"/PROJETSYMFONY/public/index.php/api/movies/301\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/310\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/313\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/356\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/362\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/379\"\n    ],\n    \"nationality\": \"/PROJETSYMFONY/public/index.php/api/nationalities/133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/actors/352",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"actors",
+								"352"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/actors/352",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"actors",
+								"352"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/categories",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/PROJETSYMFONY/api/movies/307\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/categories",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/categories/{id}",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"categories",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Category",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/merge-patch+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/PROJETSYMFONY/api/movies/307\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Media Objects",
+			"item": [
+				{
+					"name": "Get Media Objects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/media_objects",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"media_objects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Media Object",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"description": "Image (string)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_PROD}}/media_objects",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"media_objects"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nationality",
+			"item": [
+				{
+					"name": "Get Nationalities",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Nationality",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"actors\": [\n    \"/PROJETSYMFONY/api/actors/430\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/nationalities",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"nationalities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Nationality",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PROD}}/nationalities/{id}",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"nationalities",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Nationality",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/merge-patch+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"actors\": [\n     \"/PROJETSYMFONY/api/actors/430\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/nationalities/{id}",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"nationalities",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"roles\": [\n    \"string\"\n  ],\n  \"password\": \"string\",\n  \"username\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/users",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/users/{id}",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"roles\": [\n    \"string\"\n  ],\n  \"password\": \"string\",\n  \"username\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PROD}}/users/{id}",
+							"host": [
+								"{{API_PROD}}"
+							],
+							"path": [
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				
+				"method": "POST",
+				"header": [
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@mail.com\",\n    \"password\": \"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/PROJETSYMFONY/auth",
+					"host": [
+						"mmi21d03",
+						"mmi-troyes",
+						"fr"
+					],
+					"path": [
+						"PROJETSYMFONY",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "API",
+			"value": "http://localhost:8088/PROJETSYMFONY/index.php/api"
+		},
+		{
+			"key": "API_LOCAL",
+			"value": "http://localhost:8088/PROJETSYMFONY/public/index.php"
+		},
+		{
+			"key": "API_PROD",
+			"value": "https://http://127.0.0.1:8000/PROJETSYMFONY/api"
+		}
+	]
+}

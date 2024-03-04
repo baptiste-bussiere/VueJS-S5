@@ -28,11 +28,23 @@ const callData = () => {
       state.loading = false;
     }
   };
-  
+
+  const fetchActorDetails = async (actorId) => {
+    try {
+      const response = await axios.get(`http://127.0.0.1:8000/api/actors/${actorId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching actor details:', error);
+      return null;
+    }
+  };
+
 
   return {
     ...toRefs(state),
-    fetchData
+    fetchData,
+    fetchActorDetails
+
   };
 };
 

@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "Mona";
+  src: url("/Mona-Sans.ttf");
+}
+
 :root {
   line-height: 1.5;
   font-weight: 400;
-
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Mona";
 }
 
 body {
@@ -36,33 +40,89 @@ body {
   }
 }
 
-.composant{
+.composant {
   display: flex;
   flex-direction: column;
 
   // background-color: blue;
   height: 100vh;
-  h1{
+  h1 {
     margin: 0.5em 3.4em;
     margin-top: 1em;
   }
-.cardContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1em;
-
-  height: 40vh;
-  width: 100%;
-  // background-color: green;
-  padding: 1em;
-  .card{
+  .cardContainer {
     display: flex;
-    width:  17%;
-    border-radius: 0.3em;
-cursor: pointer;
-    background-color: #f4f4f4;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    height: 40vh;
+    // background-color: green;
+    padding: 1em;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      width: 17%;
+      border-radius: 0.3em;
+      cursor: pointer;
+      transition: 250ms;
+      background-color: #f4f4f4;
+
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        scale: 1.03;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        border-radius: 0.3em;
+      }
+    }
   }
 }
-}
 
+.detailsMovie {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  height: 80vh;
+
+  .actorContainer {
+    display: flex;
+    flex-direction: column;
+
+    .actors {
+      display: flex;
+    gap: 2em;
+      .actor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+  a {
+    color: black;
+    // text-decoration: none;
+  }
+  .left {
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    padding: 2em;
+    h1 {
+      margin: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}
