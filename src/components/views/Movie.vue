@@ -7,7 +7,13 @@
     <div class="cardContainer" v-else >
       
       <router-link  v-for="item in data" :key="item.id" class="moviecard card" :to="`/movie/details/${item.id}`">
-        <div >{{ item.title }}</div>
+        <div>
+                  <img :src="`/dataImg/movie/${item.id}.webp`" alt="">
+
+          
+        <h2>{{ item.title }}</h2>  
+
+        </div>
       </router-link>
     </div>
   </div>
