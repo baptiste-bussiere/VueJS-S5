@@ -9,7 +9,17 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>About Page</h1>
+  <section class="landing">
+      <h1>Bienvenue sur YouMovie</h1>
+  </section>
+  <section class="lastMovie">
+
+  </section>
+  <section class="biggestActor">
+
+  </section>
+  
+
 </template>
 
 <style scoped>
