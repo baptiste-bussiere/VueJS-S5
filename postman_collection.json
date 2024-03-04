@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Titre du film\",\n    \"description\": \"Description du film\",\n    \"duration\": 60,\n    \"releaseDate\": \"01/01/1990\",\n    \"director\": \"Réalisateur\",\n    \"entries\": 10000,\n    \"note\": 5,\n    \"category\": \"/symfony-s5/api/categories/82\",\n    \"actor\": [\n        \"/symfony-s5/api/actors/430\",\n        \"/symfony-s5/api/actors/429\"\n    ],\n    \"image\": \"/symfony-s5/api/media_objects/511\"\n}",
+							"raw": "{\n    \"title\": \"Titre du film\",\n    \"description\": \"Description du film\",\n    \"duration\": 60,\n    \"releaseDate\": \"01/01/1990\",\n    \"director\": \"Réalisateur\",\n    \"entries\": 10000,\n    \"note\": 5,\n    \"category\": \"/PROJETSYMFONY/api/categories/82\",\n    \"actor\": [\n        \"/PROJETSYMFONY/api/actors/430\",\n        \"/PROJETSYMFONY/api/actors/429\"\n    ],\n    \"image\": \"/PROJETSYMFONY/api/media_objects/511\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -59,7 +59,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"category\": \"/symfony-s5/api/categories/66\",\n  \"actor\": [\n    \"/symfony-s5/api/actors/351\",\n    \"/symfony-s5/api/actors/352\"\n  ],\n  \"title\": \"Titre\",\n  \"description\": \"Desc du film\",\n  \"releaseDate\": \"2024-01-31T09:04:20.026Z\",\n  \"duration\": 10,\n  \"online\": true,\n  \"note\": 5,\n  \"entries\": 5000000,\n  \"budget\": 10,\n  \"director\": \"Réalisateur\",\n  \"website\": \"http://film.com\"\n}",
+							"raw": "{\n  \"category\": \"/PROJETSYMFONY/api/categories/66\",\n  \"actor\": [\n    \"/PROJETSYMFONY/api/actors/351\",\n    \"/PROJETSYMFONY/api/actors/352\"\n  ],\n  \"title\": \"Titre\",\n  \"description\": \"Desc du film\",\n  \"releaseDate\": \"2024-01-31T09:04:20.026Z\",\n  \"duration\": 10,\n  \"online\": true,\n  \"note\": 5,\n  \"entries\": 5000000,\n  \"budget\": 10,\n  \"director\": \"Réalisateur\",\n  \"website\": \"http://film.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -126,7 +126,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstName\": \"Prénom\",\n    \"lastName\": \"Nom\",\n    \"rewards\": [\n        \"Grammies\"\n    ],\n    \"fullName\": \"Prénom Nom\",\n    \"movies\": [\n        \"/symfony-s5/api/movies/307\"\n    ],\n    \"nationality\": \"/symfony-s5/api/nationalities/133\"\n}",
+							"raw": "{\n    \"firstName\": \"Prénom\",\n    \"lastName\": \"Nom\",\n    \"rewards\": [\n        \"Grammies\"\n    ],\n    \"fullName\": \"Prénom Nom\",\n    \"movies\": [\n        \"/PROJETSYMFONY/api/movies/307\"\n    ],\n    \"nationality\": \"/PROJETSYMFONY/api/nationalities/133\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -158,7 +158,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 352,\n    \"firstName\": \"Mon\",\n    \"lastName\": \"Belluci\",\n    \"fullName\": \"Mon Belluci\",\n    \"rewards\": [\n        \"Golden Globe\"\n    ],\n    \"movies\": [\n        \"/symfony-s5/public/index.php/api/movies/301\",\n        \"/symfony-s5/public/index.php/api/movies/310\",\n        \"/symfony-s5/public/index.php/api/movies/313\",\n        \"/symfony-s5/public/index.php/api/movies/356\",\n        \"/symfony-s5/public/index.php/api/movies/362\",\n        \"/symfony-s5/public/index.php/api/movies/379\"\n    ],\n    \"nationality\": \"/symfony-s5/public/index.php/api/nationalities/133\"\n}",
+							"raw": "{\n    \"id\": 352,\n    \"firstName\": \"Mon\",\n    \"lastName\": \"Belluci\",\n    \"fullName\": \"Mon Belluci\",\n    \"rewards\": [\n        \"Golden Globe\"\n    ],\n    \"movies\": [\n        \"/PROJETSYMFONY/public/index.php/api/movies/301\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/310\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/313\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/356\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/362\",\n        \"/PROJETSYMFONY/public/index.php/api/movies/379\"\n    ],\n    \"nationality\": \"/PROJETSYMFONY/public/index.php/api/nationalities/133\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -225,7 +225,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/symfony-s5/api/movies/307\"\n  ]\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/PROJETSYMFONY/api/movies/307\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -275,7 +275,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/symfony-s5/api/movies/307\"\n  ]\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"movies\": [\n    \"/PROJETSYMFONY/api/movies/307\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -405,7 +405,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"actors\": [\n     \"/symfony-s5/api/actors/430\"\n  ]\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"actors\": [\n     \"/PROJETSYMFONY/api/actors/430\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -526,24 +526,9 @@
 		{
 			"name": "Authentication",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDk1NjMwMTEsImV4cCI6MTcwOTU2NjYxMSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.k3raxuO5KY4wW42VycvRoKIEct3OgyBbQ68Ubi9XQpL0-iro5T2znWZrUxetXgJC8YxUK7f7_7rDuyrIa3JgB_qtsRgetHmVzTVm_5rgzXZbbmqU7P-CMNcU7wtDxBRMisAEZFdro3EfQ6xC_1bD4weAovkOB_JnOo3vxtCf3CuI3S-dZQjkAZDGYWQ4jtC7BHNABRD1h7dI7iElrDTMuEwY_gfQSkSyMIZMWjZE_NHFQHrPvyxaHHi3f1Koqmrie2exeCYG5ATqDg91IM6LnyjybS5Z0E864EMTBRxSpDUsg3mpTMHovAZAn8_WhvFecrlOdBYgGJxMQheUulMn9Q",
-							"type": "string"
-						}
-					]
-				},
+				
 				"method": "POST",
 				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDk1NjE5NDMsImV4cCI6MTcwOTU2NTU0Mywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidXNlciJ9.A5VJ5NX9bhyqZSkNUWWv5BQ-exALkIq-Ud6i4AzDzL3ar26vm9dvIgh6GtPV3rb9fMEVa2Ma_QSHN2SnmGLyo1tUeQXRZR1D7yYpgiQn0xUBmyCjvaTXRYe7cy4Iw3c5yFexz98vGzK5D62FTp68Lw2y56ZcL0UaCkcnKr6HgDoikL8kTY7xwTu5e7Nf63aFa_89GLvSrqI8plTmc2lMJRfw-ymloZ7zqzuapxr1jrIIe1Tprf7n3UqGYaMMTXQKxqw5aLhqj3TM1s9Z7Nk2XyVasqX1u6vMkKK0pqUiDtzrCEmSIiMFzQRxmFQUSq_sCMZi-PyShtymHrHetPaAKw",
-						"type": "text",
-						"disabled": true
-					}
 				],
 				"body": {
 					"mode": "raw",
@@ -555,14 +540,14 @@
 					}
 				},
 				"url": {
-					"raw": "mmi21d03.mmi-troyes.fr/symfony-s5/auth",
+					"raw": "http://127.0.0.1:8000/PROJETSYMFONY/auth",
 					"host": [
 						"mmi21d03",
 						"mmi-troyes",
 						"fr"
 					],
 					"path": [
-						"symfony-s5",
+						"PROJETSYMFONY",
 						"auth"
 					]
 				}
@@ -573,15 +558,15 @@
 	"variable": [
 		{
 			"key": "API",
-			"value": "http://localhost:8088/symfony-s5/index.php/api"
+			"value": "http://localhost:8088/PROJETSYMFONY/index.php/api"
 		},
 		{
 			"key": "API_LOCAL",
-			"value": "http://localhost:8088/symfony-s5/public/index.php"
+			"value": "http://localhost:8088/PROJETSYMFONY/public/index.php"
 		},
 		{
 			"key": "API_PROD",
-			"value": "https://mmi21d03.mmi-troyes.fr/symfony-s5/api"
+			"value": "https://http://127.0.0.1:8000/PROJETSYMFONY/api"
 		}
 	]
 }
